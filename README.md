@@ -1,6 +1,7 @@
 # using-rancher-cli
 
-**First step:** Make sure you have Docker installed.
+**First step:** \
+Make sure you have Docker installed.
 
 **Second step:** We need to run the Rancher Server with some commands, ex.:
   
