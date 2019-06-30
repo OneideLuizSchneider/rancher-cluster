@@ -15,9 +15,9 @@ sudo docker run -d \
   -v /opt/rancher:/var/lib/rancher \
   rancher/rancher:latest --no-cacerts
 ```
-The --no-cacerts will make sure https://rancher_url/v3/settings/cacerts is empty. \
+The `--no-cacerts` will make sure https://rancher_url/v3/settings/cacerts is empty. \
 **Remember**, this is optional. \
-This solve the problem: **x509: certificate signed by unknown authority** 
+This solve the problem: `x509: certificate signed by unknown authority` \
 
 **Third step:** \
   We need to use rancher-cli official image for run the commands(You can make for yourself an image).
