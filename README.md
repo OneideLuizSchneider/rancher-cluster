@@ -13,11 +13,14 @@ sudo docker run -d \
   -p 80:80 \
   -p 443:443 \
   -v /opt/rancher:/var/lib/rancher \
-  rancher/rancher:latest --no-cacerts
+  --privileged \
+  rancher/rancher:v2.5.1 --no-cacerts
 ```
 The `--no-cacerts` will make sure https://rancher_url/v3/settings/cacerts is empty. \
 **Remember**, this is optional. \
 This solve the problem: `x509: certificate signed by unknown authority` 
+
+The `--privileged` solve kubernetes privileged requirements on the latest versions of rancher.
 
 **Third step:** \
   We need to use rancher-cli official image for run the commands(You can make for yourself an image).
