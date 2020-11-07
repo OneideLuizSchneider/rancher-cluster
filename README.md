@@ -33,7 +33,7 @@ sudo docker run -d \
   -v /opt/rancher:/var/lib/rancher \
   --privileged \
   rancher/rancher:v2.5.1 \
-  --acme-domain mydoamin.com
+  --acme-domain mydomain.com
 ```
 
 **Third step:** \
