@@ -1,4 +1,4 @@
-# Rancher step by step
+# Rancher step by step - v2.5.1
 
 **First step:** \
 Make sure you have Docker installed.
